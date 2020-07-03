@@ -8,6 +8,14 @@ const [measurements, setMeasurements] = useState({
 
 const {date, height, weight} = measurements
 
+const onChange = event => {
+  const {name, value} = event.target
+  setMeasurements(prevMeasurements => {
+    return {...prevMeasurements,
+    [name]: value}
+  })
+}
+
 const BmiInput = () => {
   return (
     <div>
