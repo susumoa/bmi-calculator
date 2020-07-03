@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import BmiInput from './components/BmiInput'
 
 function App() {
   return (
-    <div>Hello world</div>
+    <BmiInput />
   );
 }
 
