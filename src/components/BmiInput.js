@@ -4,12 +4,13 @@ const BmiInput = () => {
   const [measurements, setMeasurements] = useState({
     date: '',
     height: '',
-    weight: ''
+    weight: '',
+    age: ''
   })
   
   const [bmi, setBmi] = useState('')
   
-  const {date, height, weight} = measurements
+  const {date, height, weight, age} = measurements
   
   const onChange = event => {
     const {name, value} = event.target
@@ -29,7 +30,8 @@ const BmiInput = () => {
       setMeasurements({
         height: '',
         weight: '',
-        date: ''
+        date: '',
+        age: ''
       })
     }
   }
@@ -47,6 +49,10 @@ const BmiInput = () => {
         <br />
         <input required type='number' min='0' placeholder='weight' value={weight} onChange={onChange} name='weight' />
         <span>kg</span>
+        <br />
+        <br />
+        
+        <input required type='number' min='0' placeholder='age' value={age} onChange={onChange} name='age' />
         <br />
         <br />
         <button onClick={calculateBmi}>Calculate</button>
