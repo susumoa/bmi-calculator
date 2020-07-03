@@ -19,7 +19,27 @@ const BmiInput = () => {
       [name]: value}
     })
   }
-  
+
+  const getWeightRange = index => {
+    if (index < 18.5) {
+      return 'Underweight'
+    } else if (index >= 18.5 && index < 25) {
+      return 'Healthy Weight'
+    } else if (index >= 25 && index < 30) {
+      return 'Overweight'
+    } else if (index >= 30) {
+      return 'Obese'
+    } else {
+      return 'Error'
+    }
+  }
+
+// BMI weight ranges
+// Less than 18.5 = Underweight
+// Between 18.5 - 24.9 = Healthy Weight
+// Between 25 - 29.9 = Overweight
+// Over 30 = Obese
+
   const calculateBmi = event => {
     event.preventDefault()
     if (height === '' || weight === '' || date === '') {
@@ -35,6 +55,8 @@ const BmiInput = () => {
       })
     }
   }
+
+  const weightRange = getWeightRange(bmi)
 
   return (
     <div>
@@ -57,7 +79,10 @@ const BmiInput = () => {
         <br />
         <button onClick={calculateBmi}>Calculate</button>
       </form>
-      {bmi !== '' && <p>BMI: {bmi}</p>}
+      {bmi !== '' && <div>
+        <p>BMI: {bmi}</p>
+        <p>You are in the {weightRange} range</p>
+      </div>}
     </div>
   )
 }
