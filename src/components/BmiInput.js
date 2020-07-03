@@ -1,4 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+const [measurements, setMeasurements] = useState({
+  date: '',
+  height: '',
+  weight: ''
+})
+
+const {date, height, weight} = measurements
 
 const BmiInput = () => {
   return (
