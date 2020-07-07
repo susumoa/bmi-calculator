@@ -70,7 +70,7 @@ const total = [
   ['Obese', 28, '#a3f7bf']
 ]
 
-const ageGroup = age => {
+const ageGroup = (age) => {
   if (age >= 16 && age < 25) {
     return group1624
   } else if (age >= 25 && age < 35) {

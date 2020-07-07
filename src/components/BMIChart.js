@@ -12,7 +12,14 @@ const BMIChart = (props) => {
     legend: "none"
   }
 
-  const data = ageGroup(age)
+  const data = ageGroup(age).map(x => {
+    if (x[0] === weightRange) {
+      x[2] = '#fa26a0'
+    } else if (x[0] !== 'Weight Range') {
+      x[2] = '#a3f7bf'
+    }
+    return x
+  })
 
   return (
     <div>
