@@ -70,8 +70,7 @@ const BmiInput = () => {
         <span>kg</span>
         <br />
         <br />
-        
-        <input required type='number' min='0' placeholder='age' value={age} onChange={onChange} name='age' />
+        <input required type='number' min='16' placeholder='age' value={age} onChange={onChange} name='age' />
         <br />
         <br />
         <button onClick={calculateBmi}>Calculate</button>
