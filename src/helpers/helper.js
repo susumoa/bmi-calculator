@@ -69,3 +69,25 @@ const total = [
   ['overweight', 36],
   ['obese', 28]
 ]
+
+const ageGroup = age => {
+  if (age >= 16 && age < 25) {
+    return group1624
+  } else if (age >= 25 && age < 35) {
+    return group2534
+  } else if (age >= 35 && age < 45) {
+    return group3544
+  } else if (age >= 45 && age < 55) {
+    return group4554
+  } else if (age >= 55 && age < 65) {
+    return group4554
+  } else if (age >= 65 && age < 75) {
+    return group4554
+  } else if (age >= 75) {
+    return group4554
+  } else {
+    return total
+  }
+}
+
+export default {ageGroup}
