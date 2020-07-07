@@ -3,7 +3,6 @@ import Result from './Result'
 
 const BmiInput = () => {
   const [measurements, setMeasurements] = useState({
-    date: '',
     height: '',
     weight: '',
     age: ''
@@ -11,7 +10,7 @@ const BmiInput = () => {
   
   const [bmi, setBmi] = useState('')
   
-  const {date, height, weight, age} = measurements
+  const {height, weight, age} = measurements
   
   const onChange = event => {
     const {name, value} = event.target
@@ -43,7 +42,7 @@ const BmiInput = () => {
 
   const calculateBmi = event => {
     event.preventDefault()
-    if (height === '' || weight === '' || date === '') {
+    if (height === '' || weight === '') {
       alert('Please fill out everything')
     } else {
       console.log('clicked')
@@ -51,7 +50,6 @@ const BmiInput = () => {
       setMeasurements({
         height: '',
         weight: '',
-        date: '',
         age: ''
       })
     }
@@ -63,9 +61,6 @@ const BmiInput = () => {
     <div>
       <h1>Daily measurements</h1>
       <form>
-        <input required type='date' value={date} onChange={onChange} name='date' />
-        <br />
-        <br />
         <input required type='number' min='0' placeholder='height' value={height} onChange={onChange} name='height' />
         <span>cm</span>
         <br />
