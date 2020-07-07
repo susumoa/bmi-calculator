@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Result from './Result'
-import Chart from './Chart'
+import Chart from './BMIChart'
 
 const BmiInput = () => {
   const [measurements, setMeasurements] = useState({
@@ -77,7 +77,7 @@ const BmiInput = () => {
       </form>
       {bmi !== '' && <div>
         <Result bmi={bmi} weightRange={weightRange} />
-        <Chart age={age} weightRange={weightRange} />
+        <BMIChart age={age} weightRange={weightRange} />
       </div>}
     </div>
   )
