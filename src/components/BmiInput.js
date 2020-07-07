@@ -60,7 +60,7 @@ const BmiInput = () => {
 
   return (
     <div>
-      <h1>Daily measurements</h1>
+      <h1>Calculate your BMI</h1>
       <form>
         <input required type='number' min='0' placeholder='height' value={height} onChange={onChange} name='height' />
         <span>cm</span>
