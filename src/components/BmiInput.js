@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Result from './Result'
-import Chart from './BMIChart'
+import BMIChart from './BMIChart'
 
 const BmiInput = () => {
   const [measurements, setMeasurements] = useState({
@@ -48,11 +48,6 @@ const BmiInput = () => {
     } else {
       console.log('clicked')
       setBmi((weight / ((height / 100) * (height / 100))).toFixed(1))
-      setMeasurements({
-        height: '',
-        weight: '',
-        age: ''
-      })
     }
   }
 
@@ -70,7 +65,7 @@ const BmiInput = () => {
         <span>kg</span>
         <br />
         <br />
-        <input required type='number' min='16' placeholder='age' value={age} onChange={onChange} name='age' />
+        <input type='number' min='16' placeholder='age' value={age} onChange={onChange} name='age' />
         <br />
         <br />
         <button onClick={calculateBmi}>Calculate</button>
