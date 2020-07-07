@@ -4,11 +4,24 @@ import ageGroup from '../helpers/helper'
 
 const BMIChart = (props) => {
   const {age, weightRange} = props
-  console.log('Age: ', age)
-  console.log(ageGroup(age))
+
+  const options = {
+    title: "Weight ranges among age groups",
+    legend: "none"
+  }
+
+  const data = ageGroup(age)
+
   return (
     <div>
-      <p>{age}</p>
+    <Chart
+      chartType="ColumnChart"
+      data={data}
+      options={options}
+      width="100%"
+      height="400px"
+      legendToggle
+    />
     </div>
   )
 }
