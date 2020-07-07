@@ -1,73 +1,73 @@
 // age group 16-24
 const group1624 = [
-  ['Weight Range', 'Rates among age 16-24'],
-  ['Underweight', 5],
-  ['Normal', 57],
-  ['Overweight', 22],
-  ['Obese', 16]
+  ['Weight Range', 'Rates among age 16-24', { role: "style" }],
+  ['Underweight', 5, '#a3f7bf'],
+  ['Normal', 57, '#a3f7bf'],
+  ['Overweight', 22, '#a3f7bf'],
+  ['Obese', 16, '#a3f7bf']
 ]
 
 // age group 25-34
 const group2534 = [
-  ['Weight Range', 'Rates among age 25-34'],
-  ['Underweight', 2],
-  ['Normal', 41],
-  ['Overweight', 34],
-  ['Obese', 23]
+  ['Weight Range', 'Rates among age 25-34', { role: "style" }],
+  ['Underweight', 2, '#a3f7bf'],
+  ['Normal', 41, '#a3f7bf'],
+  ['Overweight', 34, '#a3f7bf'],
+  ['Obese', 23, '#a3f7bf']
 ]
 
 // age group 35-44
 const group3544 = [
-  ['Weight Range', 'Rates among age 35-44'],
-  ['Underweight', 1],
-  ['Normal', 33],
-  ['Overweight', 37],
-  ['Obese', 29]
+  ['Weight Range', 'Rates among age 35-44', { role: "style" }],
+  ['Underweight', 1, '#a3f7bf'],
+  ['Normal', 33, '#a3f7bf'],
+  ['Overweight', 37, '#a3f7bf'],
+  ['Obese', 29, '#a3f7bf']
 ]
 
 // age group 45-54
 const group4554 = [
-  ['Weight Range', 'Rates among age 45-54'],
-  ['Underweight', 1],
-  ['Normal', 27],
-  ['Overweight', 36],
-  ['Obese', 36]
+  ['Weight Range', 'Rates among age 45-54', { role: "style" }],
+  ['Underweight', 1, '#a3f7bf'],
+  ['Normal', 27, '#a3f7bf'],
+  ['Overweight', 36, '#a3f7bf'],
+  ['Obese', 36, '#a3f7bf']
 ]
 
 // age group 55-64
 const group5564 = [
-  ['Weight Range', 'Rates among age 55-64'],
-  ['Underweight', 0],
-  ['Normal', 27],
-  ['Overweight', 39],
-  ['Obese', 34]
+  ['Weight Range', 'Rates among age 55-64', { role: "style" }],
+  ['Underweight', 0, '#a3f7bf'],
+  ['Normal', 27, '#a3f7bf'],
+  ['Overweight', 39, '#a3f7bf'],
+  ['Obese', 34, '#a3f7bf']
 ]
 
 // age group 65-74
 const group6574 = [
-  ['Weight Range', 'Rates among age 65-74'],
-  ['Underweight', 1],
-  ['Normal', 24],
-  ['Overweight', 43],
-  ['Obese', 32]
+  ['Weight Range', 'Rates among age 65-74', { role: "style" }],
+  ['Underweight', 1, '#a3f7bf'],
+  ['Normal', 24, '#a3f7bf'],
+  ['Overweight', 43, '#a3f7bf'],
+  ['Obese', 32, '#a3f7bf']
 ]
 
 // age group 75+
 const group75 = [
-  ['Weight Range', 'Rates among age 75+'],
-  ['Underweight', 1],
-  ['Normal', 27],
-  ['Overweight', 41],
-  ['Obese', 31]
+  ['Weight Range', 'Rates among age 75+', { role: "style" }],
+  ['Underweight', 1, '#a3f7bf'],
+  ['Normal', 27, '#a3f7bf'],
+  ['Overweight', 41, '#a3f7bf'],
+  ['Obese', 31, '#a3f7bf']
 ]
 
 // total
 const total = [
-  ['Weight Range', 'Rates among all ages'],
-  ['Underweight', 2],
-  ['Normal', 34],
-  ['Overweight', 36],
-  ['Obese', 28]
+  ['Weight Range', 'Rates among all ages', { role: "style" }],
+  ['Underweight', 2, '#a3f7bf'],
+  ['Normal', 34, '#a3f7bf'],
+  ['Overweight', 36, '#a3f7bf'],
+  ['Obese', 28, '#a3f7bf']
 ]
 
 const ageGroup = age => {
