@@ -25,7 +25,7 @@ const BmiInput = () => {
     if (index < 18.5) {
       return 'Underweight'
     } else if (index >= 18.5 && index < 25) {
-      return 'Healthy Weight'
+      return 'Normal'
     } else if (index >= 25 && index < 30) {
       return 'Overweight'
     } else if (index >= 30) {
@@ -37,7 +37,7 @@ const BmiInput = () => {
 
 // BMI weight ranges
 // Less than 18.5 = Underweight
-// Between 18.5 - 24.9 = Healthy Weight
+// Between 18.5 - 24.9 = Normal
 // Between 25 - 29.9 = Overweight
 // Over 30 = Obese
 
