@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Result from './Result'
 
 const BmiInput = () => {
   const [measurements, setMeasurements] = useState({
@@ -79,10 +80,7 @@ const BmiInput = () => {
         <br />
         <button onClick={calculateBmi}>Calculate</button>
       </form>
-      {bmi !== '' && <div>
-        <p>BMI: {bmi}</p>
-        <p>You are in the {weightRange} range</p>
-      </div>}
+      {bmi !== '' && <Result bmi={bmi} weightRange={weightRange} />}
     </div>
   )
 }
