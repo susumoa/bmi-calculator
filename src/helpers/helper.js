@@ -82,9 +82,9 @@ const ageGroup = age => {
   } else if (age >= 55 && age < 65) {
     return group5564
   } else if (age >= 65 && age < 75) {
-    return group75
+    return group6574
   } else if (age >= 75) {
-    return group4554
+    return group75
   } else {
     return total
   }
