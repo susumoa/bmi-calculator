@@ -46,7 +46,6 @@ const BmiInput = () => {
     if (height === '' || weight === '') {
       alert('Please fill out everything')
     } else {
-      console.log('clicked')
       setBmi((weight / ((height / 100) * (height / 100))).toFixed(1))
     }
   }
