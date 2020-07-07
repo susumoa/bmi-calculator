@@ -1,7 +1,8 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
 
-const Component = () => {
+const Component = (props) => {
+  const {age, weightRange} = props
   return (
     <div>
       Chart
