@@ -71,22 +71,35 @@ const total = [
 ]
 
 const ageGroup = (age) => {
-  if (age >= 16 && age < 25) {
-    return group1624
-  } else if (age >= 25 && age < 35) {
-    return group2534
-  } else if (age >= 35 && age < 45) {
-    return group3544
-  } else if (age >= 45 && age < 55) {
-    return group4554
-  } else if (age >= 55 && age < 65) {
-    return group5564
-  } else if (age >= 65 && age < 75) {
-    return group6574
-  } else if (age >= 75) {
-    return group75
-  } else {
-    return total
+  console.log('Age: ', age)
+  switch (age) {
+    case 'group1624':
+      return group1624
+      break;
+    case 'group2534':
+      return group2534
+      break;
+    case 'group3544':
+      return group3544
+      break;
+    case 'group4554':
+      return group4554
+      break;
+    case 'group5564':
+      return group5564
+      break;
+    case 'group6574':
+      return group6574
+      break;
+    case 'group75':
+      return group75
+      break;
+    case 'total':
+      return total
+      break;
+    default:
+      return total
+      break;
   }
 }
 

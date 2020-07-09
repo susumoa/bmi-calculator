@@ -64,7 +64,17 @@ const BmiInput = () => {
         <span>kg</span>
         <br />
         <br />
-        <input type='number' min='16' placeholder='age' value={age} onChange={onChange} name='age' />
+        <select name='age' onChange={onChange}>
+          <option value=''>Select your age group</option>
+          <option value='group1624'>16-24</option>
+          <option value='group2534'>25-34</option>
+          <option value='group3544'>35-44</option>
+          <option value='group4554'>45-54</option>
+          <option value='group5564'>55-64</option>
+          <option value='group6574'>65-74</option>
+          <option value='group75'>75+</option>
+          <option value='total'>All</option>
+        </select>
         <br />
         <br />
         <button onClick={calculateBmi}>Calculate</button>
