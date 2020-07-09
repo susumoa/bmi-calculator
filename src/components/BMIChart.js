@@ -28,7 +28,7 @@ const BMIChart = (props) => {
         data={data}
         options={options}
         width="100%"
-        height="400px"
+        height="300px"
         legendToggle
       />
     </div>
