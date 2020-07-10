@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Result from './Result'
 import BMIChart from './BMIChart'
+import Footer from './Footer'
 import './BmiInput.css'
 
 const BmiInput = () => {
@@ -56,37 +57,38 @@ const BmiInput = () => {
   return (
     <div className='container'>
       <h1>Calculate your BMI</h1>
-        <div className='input-container'>
-          <form>
-            <input required type='number' min='0' placeholder='height' value={height} onChange={onChange} name='height' />
-            <span className='unit'>cm</span>
-            <br />
-            <input required type='number' min='0' placeholder='weight' value={weight} onChange={onChange} name='weight' />
-            <span className='unit'>kg</span>
-            <br />
-            <select name='age' onChange={onChange}>
-              <option value=''>Select your age group</option>
-              <option value='group1624'>16-24</option>
-              <option value='group2534'>25-34</option>
-              <option value='group3544'>35-44</option>
-              <option value='group4554'>45-54</option>
-              <option value='group5564'>55-64</option>
-              <option value='group6574'>65-74</option>
-              <option value='group75'>75+</option>
-              <option value='total'>All</option>
-            </select>
-            <br />
-            <button onClick={calculateBmi}>Calculate</button>
-          </form>
+      <div className='input-container'>
+        <form>
+          <input required type='number' min='0' placeholder='height' value={height} onChange={onChange} name='height' />
+          <span className='unit'>cm</span>
+          <br />
+          <input required type='number' min='0' placeholder='weight' value={weight} onChange={onChange} name='weight' />
+          <span className='unit'>kg</span>
+          <br />
+          <select name='age' onChange={onChange}>
+            <option value=''>Select your age group</option>
+            <option value='group1624'>16-24</option>
+            <option value='group2534'>25-34</option>
+            <option value='group3544'>35-44</option>
+            <option value='group4554'>45-54</option>
+            <option value='group5564'>55-64</option>
+            <option value='group6574'>65-74</option>
+            <option value='group75'>75+</option>
+            <option value='total'>All</option>
+          </select>
+          <br />
+          <button onClick={calculateBmi}>Calculate</button>
+        </form>
         {bmi !== '' && 
           <div className='result-container'>
             <Result bmi={bmi} weightRange={weightRange} />
           </div>}
-          </div>
-        {bmi !== '' && 
-          <div className='chart-container'>
-            <BMIChart age={age} weightRange={weightRange} />
-          </div>}
+      </div>
+      {bmi !== '' && 
+        <div className='chart-container'>
+          <BMIChart age={age} weightRange={weightRange} />
+        </div>}
+      <Footer />
     </div>
   )
 }
