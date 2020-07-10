@@ -7,7 +7,7 @@ input {
   width: 150px;
 }
 
-span {
+.unit {
   position: absolute;
   margin-left: 5px;
 }

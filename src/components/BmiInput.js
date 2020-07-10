@@ -59,11 +59,11 @@ const BmiInput = () => {
         <div className='input-container'>
           <form>
             <input required type='number' min='0' placeholder='height' value={height} onChange={onChange} name='height' />
-            <span>cm</span>
+            <span className='unit'>cm</span>
             <br />
             <br />
             <input required type='number' min='0' placeholder='weight' value={weight} onChange={onChange} name='weight' />
-            <span>kg</span>
+            <span className='unit'>kg</span>
             <br />
             <br />
             <select name='age' onChange={onChange}>
