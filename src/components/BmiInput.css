@@ -5,13 +5,16 @@
 
 input {
   width: 150px;
+  margin: 10px auto;
 }
 
 .unit {
   position: absolute;
   margin-left: 5px;
+  margin-top: 8px;
 }
 
 select {
   width: 158px;
+  margin: 10px auto;
 }
