@@ -18,3 +18,8 @@ select {
   width: 158px;
   margin: 10px auto;
 }
+
+button {
+  margin-bottom: 15px;
+  width: 90px;
+}
